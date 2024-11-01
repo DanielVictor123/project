@@ -23,13 +23,16 @@ function login(role) {
   // REDIRECTS BASED ON CHOICE
   switch (role) {
     case "super":
-      window.location.href = "/admin.html";
+      window.location.href =
+        "https://danielvictor123.github.io/project/admin.html";
       break;
     case "sub":
-      window.location.href = "/admin.html";
+      window.location.href =
+        "https://danielvictor123.github.io/project/admin.html";
       break;
     case "semi":
-      window.location.href = "/admin.html";
+      window.location.href =
+        "https://danielvictor123.github.io/project/admin.html";
       break;
     default:
       break;
