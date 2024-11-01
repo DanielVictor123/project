@@ -50,7 +50,7 @@ main {
 }
 
 .banner {
-  background: url("/Images/Madrid.jpg") no-repeat center center/cover;
+  background: url("https://danielvictor123.github.io/project/Images/Madrid.jpg") no-repeat center center/cover;
   color: #ffffff;
   padding: 60px 20px;
   text-align: center;
