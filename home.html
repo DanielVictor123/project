@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Homepage</title>
+    <link rel="stylesheet" href="Styles/stylehad.css" />
+    <link rel="stylesheet" href="Styles/errorModal.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER STARTS -->
+    <header>
+      <div class="logo">Hiffinity Marketplace</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="javascript:void(0);" onclick="showModal()"
+              ><button class="btn admin">Admin Login</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER STARTS -->
+
+    <!-- MAIN STARTS -->
+    <main>
+      <!--BANNER STARTS-->
+      <section class="banner">
+        <h1>Welcome to Hiffinity's Marketplace</h1>
+        <p>Your one-stop shop for all services.</p>
+        <input type="text" placeholder="Search for services..." />
+        <button class="btn">Explore Now</button>
+      </section>
+      <!--BANNER ENDS-->
+
+      <!-- FEATURED SERVICES STARTS -->
+      <section class="featured-services">
+        <h2 style="text-align: center; color: #e8491d">
+          Our Featured Services
+        </h2>
+        <div class="service-list">
+          <div class="service-item">
+            <img src="/Images/Shopping in Madrid.jpg" alt="Service 1" />
+            <h3 style="color: #e8491d">Fashion</h3>
+            <p style="color: #1476a8">
+              Get yourselve indulged in the latest fashion gossips
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="/Images/Tapas Madrid.jpg" alt="Service 2" />
+            <h3 style="color: #e8491d">Technology</h3>
+            <p style="color: #1476a8">
+              Get updated with latest technology tools
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="/Images/Shopping in Madrid.jpg" alt="Service 3" />
+            <h3 style="color: #e8491d">Entertainment</h3>
+            <p style="color: #1476a8">Get latest entertainment channels</p>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURED SERVICES ENDS -->
+
+      <!-- ERROR-MODAL STARTS -->
+      <div id="errorModal" class="col-lg-12 col-md-12 modal">
+        <div class="col-md-6 modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Please agree to the terms and conditions</h2>
+          <p>Then click on the button to log into your respective dashboard.</p>
+
+          <div class="terms-container">
+            <input type="checkbox" id="termsCheckbox" />
+            <label for="termsCheckbox"
+              >I agree to the
+              <a href="termsConditions.html" target="_blank" class="terms"
+                >terms and conditions</a
+              >.</label
+            >
+          </div>
+
+          <div class="buttons-container">
+            <button class="floating-button" onclick="login('super')">
+              Super Admin
+            </button>
+            <button class="floating-button" onclick="login('sub')">
+              Sub Admin
+            </button>
+            <button class="floating-button" onclick="login('semi')">
+              Semi-Sub Admin
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ERROR-MODAL ENDS -->
+    </main>
+    <!-- MAIN ENDS -->
+
+    <!--FOOTER STARTS-->
+    <footer>
+      <p>&copy; 2024 Marketplace. All rights reserved.</p>
+      <div class="footer-links">
+        <p>
+          Designed & Created by:
+          <a href="" class="link">Victor D. Friday-Etuk</a>
+        </p>
+        <a href="termsConditions.html" class="link">Privacy Policy</a>
+        <a href="termsConditions.html" class="link">Terms of Service</a>
+        <div class="social-icons">
+          <a href="https://facebook.com"
+            ><img src="images/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://x.com"
+            ><img src="images/x-icon.png" alt="Twitter"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="images/instagram-icon.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!--FOOTER ENDS-->
+
+    <script src="Scripts/errorModal.js"></script>
+  </body>
+</html>

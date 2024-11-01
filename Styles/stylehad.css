@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #35424a, #e8491d);
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8491d;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.banner {
+  background: url("/Images/Madrid.jpg") no-repeat center center/cover;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.banner h1 {
+  font-size: 48px;
+}
+
+.banner p {
+  font-size: 24px;
+}
+
+.btn {
+  background: #e8491d;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin {
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #e8491d;
+}
+
+.btn:hover {
+  background: #35424a;
+  color: #ffffff;
+}
+
+/* Featured Services */
+.featured-services {
+  margin-top: 40px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+/* Metrics */
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.metric {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.floating-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1f3b54;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px #1f3b54;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: floating 3s ease-in-out infinite;
+  text-decoration: none;
+}
+
+.floating-button:hover {
+  cursor: pointer;
+  background-color: #1476a8;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.link {
+  color: #e8491d;
+}
+
+.terms {
+  color: #e8491d;
+}
+
+.terms:hover {
+  color: #1476a8;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
